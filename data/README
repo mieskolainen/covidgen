@@ -1,0 +1,28 @@
+#!/bin/sh
+#
+# download datasets
+
+# OWID (Our-World-In-Data)
+wget -N https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/owid-covid-data.csv
+
+# US counties
+wget -N https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv
+
+# Switzerland
+wget -N https://raw.githubusercontent.com/daenuprobst/covid19-cases-switzerland/master/covid19_cases_switzerland_openzh.csv
+wget -N https://raw.githubusercontent.com/daenuprobst/covid19-cases-switzerland/master/covid19_fatalities_switzerland_openzh.csv
+wget -N https://raw.githubusercontent.com/daenuprobst/covid19-cases-switzerland/master/covid19_tested_switzerland_openzh.csv
+
+# Florida
+#wget https://raw.githubusercontent.com/gadenbuie/covid19-florida/master/data/covid-19-florida_arcgis_summary.csv
+wget -N https://raw.githubusercontent.com/gadenbuie/covid19-florida/master/data/covid-19-florida_arcgis_cases-by-day.csv
+wget -N https://raw.githubusercontent.com/gadenbuie/covid19-florida/master/data/covid-19-florida_arcgis_deaths-by-day.csv
+
+# Miami
+# https://rwilli5.github.io/MiamiCovidProject/Trajectory/#covid-19-deaths-by-day
+
+# LA County
+# http://dashboard.publichealth.lacounty.gov/covid19_surveillance_dashboard/
+
+# Sweden
+# https://www.kaggle.com/jannesggg/sweden-covid19-dataset
